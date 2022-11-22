@@ -1,9 +1,22 @@
 <template>
   <div id="app">
-   <CvButton>Button</CvButton>
+    <tutorial-header />
+    <cv-content id="#main-content">
+      <cv-button>Button</cv-button>
+    </cv-content>
   </div>
 </template>
 
 <style lang="scss">
 @import "./styles/_carbon.scss"; 
 </style>
+<script>
+import TutorialHeader from "./components/TutorialHeader";
+
+export default {
+  name: "App",
+  components: {
+    TutorialHeader
+  }
+};
+</script>
